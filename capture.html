@@ -1,9 +1,7 @@
-# capture.js
-This library allows you to hijack the DOM and make changes to it before it gets rendered. For more details about the origin of this library, see [this blog post](blog.tboresnt.com).
-## Usage
-First, paste this snippet of code right at the top of your `<head>` tag:
-```markup
-<script>
+<!doctype html>
+<html lang="en">
+<head>
+	<script>
 	(function(captureScript, modifyScript){
 		// stop the document from rendering anything else
 		document.write('<plaintext style="display:none">');
@@ -23,17 +21,11 @@ First, paste this snippet of code right at the top of your `<head>` tag:
 			});
 		}, 0);
 	})("./js/capture.js", "./js/modify.js");
-</script>
-```
-Then, change the file "modify.js" and add any changes to the DOM you'd like to make like so:
-```javascript
-var capturer = new Capturer();
-
-capturer.addCallback(function(doc){
-	// make any changes to the document object here
-}
-
-capturer.capture();
-
-capturer.render();
-```
+	</script>
+	<meta charset="UTF-8">
+	<title>Capture Tag</title>
+</head>
+<body>
+	<p>IT WORKED!</p>
+</body>
+</html>
