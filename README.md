@@ -1,5 +1,5 @@
 # capture.js
-This library allows you to hijack the DOM and make changes to it before it gets rendered. For more details about the origin of this library, see [this blog post](blog.tboresnt.com).
+This library allows you to hijack the DOM and make changes to it before it gets rendered. For more details about the origin of this library, see [this blog post](http://blog.tborenst.com/).
 ## Usage
 First, paste this snippet of code right at the top of your `<head>` tag:
 ```markup
